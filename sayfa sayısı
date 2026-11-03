@@ -1,0 +1,3 @@
+DECLARE @maxsayfa INT
+SELECT @maxsayfa = MAX(s_sayisi) FROM KITAPLAR
+SELECT @maxsayfa AS "Max Sayfa Sayısı"
