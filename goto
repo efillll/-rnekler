@@ -1,0 +1,9 @@
+DECLARE @sayac SMALLINT
+SET @sayac = 1
+
+yenile:
+PRINT 'Sayaç değeri : ' + CAST(@sayac AS varchar(1))
+SET @sayac = @sayac + 1
+
+WHILE @sayac <= 4
+GOTO yenile
