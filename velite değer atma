@@ -1,0 +1,13 @@
+-- SET ile sabit veya değişken tabanlı atama
+DECLARE @sayi1 INT,@sayi2INT,@toplamINT
+SET @sayi1 = 10
+SET@sayi2= 15
+SET@toplam= @sayi1 +@sayi2
+
+-- SELECT ile veri tabanından sorgu sonucu değer atama
+DECLARE @enyuksekmaas MONEY
+SELECT @enyuksekmaas = MAX(maas) FROM personel
+
+-- SELECT ile sabit değer atama
+DECLARE @enyuksekmaas PARA
+SELECT @enyuksekmaas = 15
