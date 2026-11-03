@@ -1,0 +1,4 @@
+İLAN ETMEK@DegerINT
+SET@Deger= 15
+GO
+SELECT@Deger-- Bu satır hata verir (değer birimi dışında kalır)
