@@ -1,0 +1,11 @@
+ Tablo tipi değişken tanımlama ve veri ekleme
+DECLARE @personel TABLE(
+no INT IDENTITY(1,1),
+adsoyad VARCHAR(50) NOT NULL,
+telefon VARCHAR(15)
+)
+
+INSERT INTO @personel VALUES('Elif Kılıçaslan', '35612')
+INSERT INTO @personel VALUES('Ebru kılıçaslan', '35613')
+
+SELECT * FROM @personel ORDER BY adsoyad
