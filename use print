@@ -1,0 +1,6 @@
+-- Veritabanı seçimi
+USE kutuphane
+
+-- PRINT ve SELECT çıktı farkı
+SELECT 'Deneme Mesajı'
+PRINT 'Deneme Mesajı'
