@@ -1,0 +1,7 @@
+DECLARE @Deger1 INT, @deger2 INT, @toplam INT
+SET @Deger1 = 100
+SET @deger2 = 50
+SET @toplam = @Deger1 + @deger2
+
+PRINT 'Toplam Sonucu'
+PRINT @toplam
