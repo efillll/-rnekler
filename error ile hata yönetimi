@@ -1,0 +1,13 @@
+DELETE FROM KITAP_YAZAR WHERE yazar_no = 2
+IF @@error <> 0
+BEGIN
+PRINT('Hata Oluştu')
+RETURN
+END
+
+DELETE FROM YAZARLAR WHERE yazar_no = 2
+IF @@error <> 0
+BEGIN
+PRINT('Hata Oluştu')
+RETURN
+END
