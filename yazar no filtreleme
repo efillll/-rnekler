@@ -1,0 +1,12 @@
+USE KUTUPHANE
+
+DECLARE @yazar TABLE (
+yazar_no INT
+)
+
+INSERT INTO @yazar VALUES (1)
+INSERT INTO @yazar VALUES (2)
+INSERT INTO @yazar VALUES (3)
+
+SELECT yazar_adi, yazar_soyadi FROM YAZARLAR
+WHERE yazar_no IN (SELECT yazar_no FROM @yazar)
