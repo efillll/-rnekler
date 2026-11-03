@@ -1,0 +1,22 @@
+RETURN Örneği:
+DECLARE @Deger INT
+DECLARE @deger2 INT
+SET @deger2 = 123
+
+IF @Deger IS NULL
+BEGIN
+PRINT 'deger Değişkeni NULL'
+RETURN
+END
+ELSE
+BEGIN
+PRINT @Deger
+END
+
+IF @deger2 IS NOT NULL
+PRINT @deger2
+
+--WAITFOR Örneği
+-- 10 saniye bekledikten sonra sorguyu çalıştırır
+WAITFOR DELAY '00:00:10'
+SELECT * FROM personel
